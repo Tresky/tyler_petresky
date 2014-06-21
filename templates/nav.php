@@ -11,16 +11,21 @@
  * the navigation panel in it.
  */
 
+
+
 ?>
 
 <nav>
 	<a href="/">
-		<h1 class="nav"><?= $name; ?></h1>
+		<h1><?= $name; ?></h1>
 	</a>
 
 	<ul class="nav">
-		<li><a href="/pages/about" class="nav">About</a></li>
-		<li><a href="/pages/contact" class="nav">Contact</a></li>
-		<li><a href="/pages/projects" class="nav">Projects</a></li>
+	<div>
+		<li><a href="/pages/about">About</a></li>
+		<li><a href="/pages/contact">Contact</a></li>
+		<li><a href="/pages/projects">Projects</a></li>
+		<li><a href="/pages/research">Research Work</a></li>
+	</div>
 	</ul>
 </nav>

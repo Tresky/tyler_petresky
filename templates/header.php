@@ -12,6 +12,9 @@
 
 $name = "Tyler Petresky";
 
+$keywords = "Tyler,Petresky,Tyler Petresky,computer,engineer,computer engineer
+			,ewb,web,design,c++,arduino,embedded systems";
+
 $fonts  = "<link href='http://fonts.googleapis.com/css?family=Ubuntu' 
             rel='stylesheet' type='text/css'>";
 $fonts .= "<link href='http://fonts.googleapis.com/css?family=Droid+Sans' 
@@ -24,13 +27,18 @@ $fonts .= "<link href='http://fonts.googleapis.com/css?family=Droid+Sans'
 <html>
 	<head>
 		<!-- Include CSS Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/nav_styles.css">
 		<?= $fonts; ?>
 
-	<title><?= $name; ?></title>
+		<!-- Meta Data for Site -->
+		<meta name="description" content="Tyler Petresky, Computer Engineer">
+		<meta name="keywords" content='<?= $keywords; ?>'>
+		<meta name="author" content="Tyler Petresky">
 
-	</head>
+		<!-- Javascript -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="/assets/javascript/helpers.js"></script>
 
-	<body>
-
-	<?php include($_SERVER['DOCUMENT_ROOT'] . '/templates/nav.php'); ?>
+		<title><?= $name; ?></title>

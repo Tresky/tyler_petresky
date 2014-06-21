@@ -1,11 +1,8 @@
 <?php
-
+include($_SERVER['DOCUMENT_ROOT'] . '/templates/preheader.php');
 include($_SERVER['DOCUMENT_ROOT'] . '/templates/header.php');
-include($_SERVER['DOCUMENT_ROOT'] . '/templates/nav.php');
-
+include($_SERVER['DOCUMENT_ROOT'] . '/templates/postheader.php');
 ?>
-
-<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
 <?php
 

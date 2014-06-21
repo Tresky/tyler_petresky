@@ -15,68 +15,12 @@ body {
 	position:					absolute;
 }
 
-
-nav {
-	display: 					inline-block;
-	position:					fixed;
-	height:						65%;
-	width:						25%;
-	margin:						8% 37.5%;
-	padding:					0% 0%;
-	background: 				rgba(230, 230, 230, 0.4);
-}
-
-ul.nav {
-    text-align:                 center;
-    margin:						10% 0%;
-    padding:                    0% 0%;
-    list-style-type:			none;
-}
-
-li {
-	font-size:					18pt;
-	margin:						10% 10%;
-}
-
-footer {
-	position:					fixed;
-	bottom:						0px;
-	left:						13%;
+h1 {
 	width:						17%;
-	margin:						5px 5px;
-	padding:					5px 3%;
-	font-family:				'Droid Sans', Arial;
-	font-size:					8pt;
-	text-align:					center;
-	color:						#333;
+	background:					#fff;
+	padding:					10px;
 }
 
 a {
-	text-decoration:			none;
-}
-
-a.nav {
-	font-family:				Droid Sans, Ubuntu, Arial;
-	font-size:					24pt;
-	font-weight:				normal;
-	color:						#666;
-	line-height:				1.25em;
-}
-
-a.nav:hover {
-	color:						#444;
-}
-
-h1.nav {
-	margin:						10% 0%;
-	padding:					0;
-	font-family:				Ubuntu, Arial;
-	font-size:					32pt;
-	font-weight:				bold;
-	text-align:					center;
-	color:						#666;
-}
-
-h1.nav:hover {
-	color: 						#333;
+	text-decoration: 			none;
 }
