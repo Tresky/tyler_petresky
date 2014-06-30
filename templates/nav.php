@@ -20,12 +20,10 @@
 		<h1><?= $name; ?></h1>
 	</a>
 
-	<ul class="nav">
-	<div>
+	<ul>
 		<li><a href="/pages/about">About</a></li>
 		<li><a href="/pages/contact">Contact</a></li>
 		<li><a href="/pages/projects">Projects</a></li>
-		<li><a href="/pages/research">Research Work</a></li>
-	</div>
+		<li><a href="/pages/research">Research</a></li>
 	</ul>
 </nav>

@@ -1,8 +1,8 @@
 html {
 	min-width:					100%;
 	min-height:					100%;
-	background:					#333;
-	background:					url("../images/background5.jpg") no-repeat center center fixed;
+	background:					#000;
+	background:					url("../images/background-crop-009.jpg") no-repeat center center fixed;
 	background-size:			cover;
 }
 
@@ -16,11 +16,35 @@ body {
 }
 
 h1 {
+	display:					inline;
+	font-family: 				'Ubuntu', sans-serif;
 	width:						17%;
-	background:					#fff;
-	padding:					10px;
+	height:						100%;
+	background:					#000;
+	color: 						#fff;
+	padding:					0% 2% 0% 0%;
+	margin:						0px 0px;
+	border:						10px 10px;
+	font-size:					32pt;
+	text-align: 				center;
+	float:						left;
+	line-height: 				72px;
 }
 
 a {
 	text-decoration: 			none;
+}
+
+footer {
+	position:                   fixed;
+    bottom:                     0px;
+    margin:						0% 0% 5px 5px;
+    font-family:                'Droid Sans', Arial;
+    font-size:                  8pt;
+    text-align:                 center;
+    color:                      #333;
+}
+
+p {
+	text-indent: 				4em;
 }

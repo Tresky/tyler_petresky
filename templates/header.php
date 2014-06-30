@@ -19,6 +19,8 @@ $fonts  = "<link href='http://fonts.googleapis.com/css?family=Ubuntu'
             rel='stylesheet' type='text/css'>";
 $fonts .= "<link href='http://fonts.googleapis.com/css?family=Droid+Sans' 
             rel='stylesheet' type='text/css'>";
+$fonts .= "<link href='http://fonts.googleapis.com/css?family=Roboto'
+			rel='stylesheet' type='text/css'>"
 
 ?>
 
@@ -30,6 +32,7 @@ $fonts .= "<link href='http://fonts.googleapis.com/css?family=Droid+Sans'
 		<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/nav_styles.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/info_box_styles.css">
 		<?= $fonts; ?>
 
 		<!-- Meta Data for Site -->
@@ -39,6 +42,7 @@ $fonts .= "<link href='http://fonts.googleapis.com/css?family=Droid+Sans'
 
 		<!-- Javascript -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!--<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>-->
 		<script type="text/javascript" src="/assets/javascript/helpers.js"></script>
 
 		<title><?= $name; ?></title>
