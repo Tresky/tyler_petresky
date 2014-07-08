@@ -3,10 +3,15 @@
 $(document).ready(function()
 {
 	var height = $('nav').height();
+	var str_height = height + "px";
 	$("nav ul li").css("height", height);
 	$("nav ul li a").css("height", height);
-	//$("nav ul li").css("line-height", height);
-	//$("nav ul li a").css("line-height", height);
+	$("nav ul li").css("line-height", str_height);
+
+	$("h1").css("line-height", str_height);
+
+	FitTextSize("nav h1");
+	FitTextSize("nav ul div li");
 });
 
 $('nav').each(function(clickable)
@@ -20,6 +25,17 @@ $('nav').each(function(clickable)
 		}
 	});
 });
+
+function FitTextSize(elem)
+{
+	var step = 1;
+	if ($(elem).width() > $(elem).parent().width() || $(elem).height() > $(elem).parent().height())
+	{
+		var change_size = $(elem).css("font-size").substr(0, 2) - step;
+		$(elem).css("font-size", change_size);
+		FitTextSize(elem);
+	}
+}
 
 function GetPage()
 {
