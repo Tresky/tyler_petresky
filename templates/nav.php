@@ -15,13 +15,19 @@
 
 <nav>
 	<a href="/">
-		<div><h1><?= $name; ?></h1></div>
+		<h1 class="nav"><?= $name; ?></h1>
 	</a>
 
-	<ul>
-		<div><li><a href="/pages/about">About</a></li></div>
-		<div><li><a href="/pages/contact">Contact</a></li></div>
-		<div><li><a href="/pages/projects">Projects</a></li></div>
-		<div><li><a href="/pages/research">Research</a></li></div>
+	<!-- Used for the smallest screen sizes. The checkbox
+		 controls a drop-down menu that appears when the
+		 screen is too small to host the cross bar.-->
+	<input type="checkbox", id="nav-button">
+	<label for="nav-button">Menu</label>
+	<ul class="nav">
+		<li id="nav-projects"><a href="/pages/research">Research</a></li>
+		<li id="nav-projects"><a href="/pages/projects">Projects</a></li>
+		<li id="nav-resume"><a href="https://docs.google.com/document/d/1AVTCfnH_vGQpApFrcm-Ty6pOlIskvE9XK_sW4h1RBuE/edit?usp=sharing">Resume</a></li>
+		<li id="nav-contact"><a href="/pages/contact">Contact</a></li>
+		<li id="nav-about"><a href="/pages/about">About</a></li>
 	</ul>
 </nav>

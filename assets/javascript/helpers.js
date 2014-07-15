@@ -4,6 +4,27 @@ $(document).ready(function()
 {
 	var height = $('nav').height();
 	var str_height = height + "px";
+	$("ul.nav li").css("height", height);
+	$("ul.nav li a").css("height", height);
+	$("ul.nav li").css("line-height", str_height);
+
+	$("nav h1").css("line-height", str_height);
+	$("label").css("line-height", str_height);
+
+	//FitTextSize("nav h1");
+	//FitTextSize("nav ul div li");
+});
+
+/*$('nav ul.nav').click(function()
+{
+	var state = $('ul.nav li').css('display');
+	if (state == 'inline')
+		$('ul.nav li').css('display', 'block');
+});*/
+
+/*$(window).resize(function() {
+	var height = $('nav').height();
+	var str_height = height + "px";
 	$("nav ul li").css("height", height);
 	$("nav ul li a").css("height", height);
 	$("nav ul li").css("line-height", str_height);
@@ -12,9 +33,9 @@ $(document).ready(function()
 
 	FitTextSize("nav h1");
 	FitTextSize("nav ul div li");
-});
+});*/
 
-$('nav').each(function(clickable)
+$('ul.nav').each(function(clickable)
 {
 	var list = clickable.getElements('li');
 

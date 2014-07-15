@@ -1,3 +1,9 @@
+/*******************************************************************************
+ *******************************************************************************
+ ***** GENERAL *****************************************************************
+ *******************************************************************************
+ ******************************************************************************/
+
 html {
 	min-width:					100%;
 	min-height:					100%;
@@ -7,28 +13,262 @@ html {
 }
 
 body {
-	min-width:					100%;
-	min-height:					100%;
 	width:						100%;
 	height:						100%;
+	min-width:					100%;
+	min-height:					100%;
 	margin:						0% 0%;
 	position:					absolute;
 }
 
-a {
-	text-decoration: 			none;
+p {
+	text-indent:				2em;
 }
+
+
+
+/*******************************************************************************
+ *******************************************************************************
+ ***** NAVIGATION BAR **********************************************************
+ *******************************************************************************
+ ******************************************************************************/
+
+nav {
+	min-width:					100%;
+	width:						100%;
+	height:						8%;
+	background:					#000;
+}
+
+.nav {
+	/*display:					inline;*/
+	float:						left;
+}
+
+h1.nav {
+	width:						245px;
+	min-width:					245px;
+	height:						100%;
+	padding:					0 0 0 15px;
+	background:					#000;
+	color:						#fff;
+	font-family:				'Ubuntu', sans-serif;
+	font-size:					2.3em;
+}
+
+ul.nav {
+	height:						100%;
+	/*float:						right;*/
+}
+
+ul.nav li {
+	width:						20%;
+	/*display:					inline;*/
+	float:						right;
+	text-align: 				center;
+	font-family:				'Droid Sans', sans-serif;
+}
+
+ul.nav li a {
+	width:						100%;
+	display:					block;
+	background:					#000;
+	color:						#fff;
+	text-decoration: 			none;
+	transition:					all ease-in-out 0.4s;
+	-webkit-transition			all ease-in-out 0.4s;
+	-moz-transition				all ease-in-out 0.4s;
+	-ms-transition				all ease-in-out 0.4s;
+}
+
+ul.nav li a:hover {
+	background:					#629f6f;
+	transition:					all ease-in-out 0.4s;
+	-webkit-transition			all ease-in-out 0.4s;
+	-moz-transition				all ease-in-out 0.4s;
+	-ms-transition				all ease-in-out 0.4s;
+}
+
+
+/*******************************************************************************
+ ***** BEGIN MEDIA QUERIES *****************************************************
+ ******************************************************************************/
+
+/*
+ * Largest Screen Size
+ * Navigation bar sits out to the right of my name.
+ */
+@media all and (min-width: 67.1em)
+{
+	input[type=checkbox], label {
+    	display:				none;
+	}
+
+	ul.nav {
+		width:					800px;
+		display:				inline;
+		float:					right;
+	}
+
+	ul.nav li {
+		font-size:				1.5em;
+	}
+}
+
+/*
+ * Medium Screen Size
+ * Navigation bar sits below my name and stretches all the way across.
+ */
+@media all and (min-width: 40.1em) and (max-width: 67em)
+{
+	input[type=checkbox], label {
+    	display:				none;
+	}
+
+	ul.nav {
+		width:					100%;
+		display:				block;
+	}
+
+	ul.nav li {
+		font-size:				1.5em;
+	}
+}
+
+/*
+ * Small Screen Size
+ * Navigation bar collapses into a menu button that sits tn top right.
+ */
+@media all and (min-width: 1em) and (max-width: 40em)
+{
+	input[type=checkbox] {
+    	display:				none;
+	}
+
+	ul.nav, label {
+		width:					150px;
+		display:				inline-block;
+		position:				absolute;
+	}
+
+	label {
+		height:					8%;
+		top:					0;
+		right:					0;
+		z-index:				1;
+    	background: 			#000;
+    	color: 					#fff;
+    	font-family:			'Droid Sans', sans-serif;
+    	font-weight: 			bold;
+    	font-size:				1.3em;
+    	text-align: 			center;
+    	transition:				all ease-in-out 0.4s;
+		-webkit-transition		all ease-in-out 0.4s;
+		-moz-transition			all ease-in-out 0.4s;
+		-ms-transition			all ease-in-out 0.4s;
+	}
+
+	label:hover {
+		background:				#629f6f;
+		transition:				all ease-in-out 0.4s;
+		-webkit-transition		all ease-in-out 0.4s;
+		-moz-transition			all ease-in-out 0.4s;
+		-ms-transition			all ease-in-out 0.4s;
+	}
+
+	ul.nav {
+		height:					200px;
+		float:					right;
+		position:				absolute;
+		top:					-40%;
+		right:					0;
+		z-index:				0;
+		transition:				all ease-in-out 0.4s;
+		-webkit-transition		all ease-in-out 0.4s;
+		-moz-transition			all ease-in-out 0.4s;
+		-ms-transition			all ease-in-out 0.4s;
+	}
+
+	ul.nav li {
+		width:					100%;
+		height:					20%;
+		display:				inline-block;
+	}
+
+	input[type=checkbox]:checked ~ ul.nav {
+    	top:					8%;
+    	transition:				all ease-in-out 0.4s;
+		-webkit-transition		all ease-in-out 0.4s;
+		-moz-transition			all ease-in-out 0.4s;
+		-ms-transition			all ease-in-out 0.4s;
+	}
+
+	input[type=checkbox]:checked ~ label {
+    	background:				#629f6f;
+	}
+}
+
+/*******************************************************************************
+ ***** END MEDIA QUERIES *******************************************************
+ ******************************************************************************/
+
+
+
+/*******************************************************************************
+ *******************************************************************************
+ ***** TEXT BOXES **************************************************************
+ *******************************************************************************
+ ******************************************************************************/
+
+
+
+@media all and (min-width: 67.1em)
+{
+	
+}
+
+div.info-box {
+	width:					36%;
+	height:					92%;
+	position:				absolute;
+	top:					8%;
+	left:					5%;
+	background:				#b9c7d4;
+	opacity:				0.8;
+	padding:				2% 2% 2% 2%;
+	border-style:			solid;
+	border-width: 			0 3px 0 3px;
+	border-color: 			#000;
+	}
+
+h2.info-box {
+	width:						100%;
+	font-family: 				'Merriweather', serif;
+	font-size:					2.0em;
+	text-align: 				center;
+}
+
+.info-box p {
+	font-family:			'Droid Sans', sans-serif;
+	font-size:				1.1em;
+	line-height:			1.3em;
+}
+
+#contact-box p {
+	text-indent: 			0
+}
+
+
+
+
+
+
+
+
+
 
 footer {
-	position:                   fixed;
-    bottom:                     0px;
-    margin:						0% 0% 5px 5px;
-    font-family:                'Droid Sans', Arial;
-    font-size:                  8pt;
-    text-align:                 center;
-    color:                      #333;
-}
-
-p {
-	text-indent: 				4em;
+	position:					absolute;
+	bottom:						1%;
+	left:						1%;
 }

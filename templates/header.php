@@ -19,8 +19,10 @@ $fonts  = "<link href='http://fonts.googleapis.com/css?family=Ubuntu'
             rel='stylesheet' type='text/css'>";
 $fonts .= "<link href='http://fonts.googleapis.com/css?family=Droid+Sans' 
             rel='stylesheet' type='text/css'>";
-$fonts .= "<link href='http://fonts.googleapis.com/css?family=Roboto'
-			rel='stylesheet' type='text/css'>"
+$fonts .= "<link href='http://fonts.googleapis.com/css?family=Lato'
+			rel='stylesheet' type='text/css'>";
+$fonts .= "<link href='http://fonts.googleapis.com/css?family=Merriweather'
+			rel='stylesheet' type='text/css'>";
 
 ?>
 
@@ -31,8 +33,8 @@ $fonts .= "<link href='http://fonts.googleapis.com/css?family=Roboto'
 		<!-- Include CSS Stylesheets -->
 		<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
-		<link rel="stylesheet" type="text/css" href="/assets/css/nav_styles.css">
-		<link rel="stylesheet" type="text/css" href="/assets/css/info_box_styles.css">
+		<!--<link rel="stylesheet" type="text/css" href="/assets/css/nav_styles.css">-->
+		<!--<link rel="stylesheet" type="text/css" href="/assets/css/info_box_styles.css">-->
 		<?= $fonts; ?>
 
 		<!-- Meta Data for Site -->

@@ -4,12 +4,14 @@ include($_SERVER['DOCUMENT_ROOT'] . '/templates/header.php');
 include($_SERVER['DOCUMENT_ROOT'] . '/templates/postheader.php');
 ?>
  
-<div class="box fade-in about">
-	<h2>About Me</h2>
+<div class="info-box" id="about-box">
+	<h2 class="info-box">About Me</h2>
+	<br>
 	<p>
 	I currently am attending school at the University of Central Florida (UCF)
 	to acquire my bachelors degree in Computer Engineering. As of the present time
-	I am a 2 year student.
+	I am a 2nd year student.
+	</p>
 </div>
 
 <?php
