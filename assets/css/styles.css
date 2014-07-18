@@ -8,8 +8,8 @@ html {
 	min-width:					100%;
 	min-height:					100%;
 	background:					#000;
-	background:					url("../images/background-crop-009.jpg") no-repeat center center fixed;
-	background-position: 		right top;
+	background:					url("../images/background/background-crop-009.jpg") no-repeat center center fixed;
+	background-position: 		right;
 	background-size:			cover;
 }
 
@@ -26,6 +26,10 @@ p {
 	text-indent:				2em;
 }
 
+ul {
+	list-style: 				none;
+}
+
 
 
 /*******************************************************************************
@@ -37,12 +41,13 @@ p {
 nav {
 	min-width:					100%;
 	width:						100%;
-	height:						8%;
+	height:						78px;
+	opacity:					0.8;
 	background:					#000;
 }
 
 h1.nav {
-	width:						245px;
+	width:						258px;
 	min-width:					245px;
 	height:						100%;
 	float:						left;
@@ -148,10 +153,10 @@ ul.nav li a:hover {
 	}
 
 	label {
-		height:					8%;
+		height:					78px;
 		top:					0;
 		right:					0;
-		z-index:				2;
+		z-index:				3;
     	background: 			#000;
     	color: 					#fff;
     	font-family:			'Droid Sans', sans-serif;
@@ -176,9 +181,9 @@ ul.nav li a:hover {
 		height:					1em;
 		float:					right;
 		position:				absolute;
-		top:					-40%;
+		top:					-50%;
 		right:					0;
-		z-index:				1;
+		z-index:				2;
 		transition:				all ease-in-out 0.4s;
 		-webkit-transition		all ease-in-out 0.4s;
 		-moz-transition			all ease-in-out 0.4s;
@@ -193,7 +198,7 @@ ul.nav li a:hover {
 	}
 
 	input[type=checkbox]:checked ~ ul.nav {
-    	top:					8%;
+    	top:					78px;
     	transition:				all ease-in-out 0.4s;
 		-webkit-transition		all ease-in-out 0.4s;
 		-moz-transition			all ease-in-out 0.4s;
@@ -220,7 +225,7 @@ ul.nav li a:hover {
 div.info-box {
 	width:					36%;
 	position:				absolute;
-	top:					8%;
+	top:					78px;
 	bottom:					0;
 	left:					5%;
 	background:				#b9c7d4;
@@ -229,13 +234,13 @@ div.info-box {
 	border-style:			solid;
 	border-width: 			0 3px 0 3px;
 	border-color: 			#000;
-	}
+}
 
 h2.info-box {
-	width:						100%;
-	font-family: 				'Merriweather', serif;
-	font-size:					2.0em;
-	text-align: 				center;
+	width:					100%;
+	font-family: 			'Merriweather', serif;
+	font-size:				2.0em;
+	text-align: 			center;
 }
 
 .info-box p {
@@ -244,8 +249,19 @@ h2.info-box {
 	line-height:			1.3em;
 }
 
-#contact-box p {
+#contact-box p, #about-box p {
 	text-indent: 			0
+}
+
+ul.projects img, ul.research img {
+	display:				block;
+	margin:					10px auto 20px auto;
+}
+
+.projects h3, .research h3 {
+	margin-bottom:				5px;
+	font-family: 			'Merriweather', serif;
+	font-size:				1.25em;
 }
 
 
@@ -257,7 +273,7 @@ h2.info-box {
 @media all and (min-width: 40.1em) and (max-width: 67em)
 {
 	div.info-box {
-		top:				16%;
+		top:				156px;
 		bottom:				0;
 	}
 }
@@ -267,20 +283,14 @@ h2.info-box {
 	div.info-box {
 		width:				initial;
 		height:				initial;
-		top:				8%;
+		top:				78px;
 		left:				0;
 		bottom:				0;
 		right:				0;
-		padding:			0 10px 0 10px;
+		padding:			20px 15px 15px 15px;
 		border-width: 		0;
-		z-index:			0;
+		z-index:			-1;
 	}
-
-	h2.info-box:before {
-		content:			"\a";
-		white-space: 		pre;
-	}
-
 
 }
 
@@ -293,7 +303,11 @@ h2.info-box {
 
 
 footer {
-	position:					absolute;
-	bottom:						1%;
-	left:						1%;
+	position:					fixed;
+	padding:					2px;
+	right:						0px;
+	bottom:						0;
+	color:						#fff;
+	/*background-color: 			#000;*/
+	opacity:					0.8;
 }

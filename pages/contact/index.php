@@ -8,9 +8,6 @@ include($_SERVER['DOCUMENT_ROOT'] . '/templates/postheader.php');
 	<h2 class="info-box">Contact Me</h2>
 	<br>
 	<br>
-	<br>
-	<br>
-	<br>
 	<p>
 	Phone: (850) 572-7440<br><br>
 	Email: tnpetresky@gmail.com<br><br>

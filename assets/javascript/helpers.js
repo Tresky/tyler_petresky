@@ -15,6 +15,17 @@ $(document).ready(function()
 	//FitTextSize("nav ul div li");
 });
 
+/*$(document).ready(function()
+{
+	var info_box_height = $('div.info-box').height();
+	var window_height = $(window).height();
+	var nav_height = $('nav').height();
+	if (window_height - nav_height > info_box_height)
+		$('div.info-box').css('bottom', '0');
+	else
+		$('div.info-box').css('bottom', 'auto');
+});*/
+
 /*$('nav ul.nav').click(function()
 {
 	var state = $('ul.nav li').css('display');

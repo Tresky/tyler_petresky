@@ -14,7 +14,7 @@
 ?>		
 
 		<footer>
-			Copyright &copy; <?= date('Y'); ?> by Tyler Petresky === Images Copyright &copy; <?= date('Y'); ?> <a href="http://ktcrabbphotography.com/">Katie Manero</a>
+			Copyright &copy; <?= date('Y'); ?> Tyler Petresky === Images Copyright &copy; <?= date('Y'); ?> <a href="http://ktcrabbphotography.com/">Katie Manero</a>
 		</footer>
 	</body>
 </html>
