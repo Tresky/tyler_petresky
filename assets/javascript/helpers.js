@@ -11,6 +11,14 @@ $(document).ready(function()
 	$("nav h1").css("line-height", str_height);
 	$("label").css("line-height", str_height);
 
+	$("#nav-apps").click(function() {
+		if ($('#apps-list').is(':visible'))
+			$('#apps-list').slideUp();
+		else
+			$('#apps-list').slideDown();
+	});
+	$("#apps-list li").css("width", $("ul.nav li").css("width"));
+
 	//FitTextSize("nav h1");
 	//FitTextSize("nav ul div li");
 });
@@ -57,47 +65,3 @@ $('ul.nav').each(function(clickable)
 		}
 	});
 });
-
-function FitTextSize(elem)
-{
-	var step = 1;
-	if ($(elem).width() > $(elem).parent().width() || $(elem).height() > $(elem).parent().height())
-	{
-		var change_size = $(elem).css("font-size").substr(0, 2) - step;
-		$(elem).css("font-size", change_size);
-		FitTextSize(elem);
-	}
-}
-
-function GetPage()
-{
-	var path = window.location.pathname;
-	var path_array = path.split('/');
-	return path_array[path_array.length - 2];
-}
-
-function UnloadInfoBox(page_unload)
-{
-	$(".box").show( "blind", 
-        {direction: "vertical"}, 1000 );
-}
-
-function ReloadInfoBox(page_load)
-{
-	$(".box").hide( "blind", 
-        {direction: "vertical"}, 1000 );
-}
-
-function NavClick(page_load)
-{
-	var current_page = GetPage();
-	if (current_page == '')
-		ReloadInfoBox(page_load);
-	else if (current_page != page_load)
-	{
-		UnloadInfoBox('.' + current_page);
-		ReloadInfoBox(page_load);
-	}
-	else
-		return;
-}

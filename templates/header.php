@@ -26,6 +26,9 @@ $fonts .= "<link href='http://fonts.googleapis.com/css?family=Merriweather'
 
 ?>
 
+<!-- If you are reading this, you are either in my software team,
+     a malicious POS, or a potential employer. Have fun. -->
+
 <!DOCTYPE html>
 
 <html>

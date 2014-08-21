@@ -62,38 +62,49 @@ h1.nav {
 	font-size:					34px;
 }
 
-ul.nav {
+ul.nav, #apps-list {
 	height:						100%;
 	display:					inline;
 	float:						right;
 }
 
-ul.nav li {
+ul.nav li, #apps-list li {
 	width:						20%;
 	float:						left;
 	text-align: 				center;
 	font-family:				'Droid Sans', sans-serif;
 }
 
-ul.nav li a {
+ul.nav li a, #apps-list li a {
 	width:						100%;
 	display:					block;
 	background:					#000;
 	color:						#fff;
 	text-decoration: 			none;
+	cursor:						pointer;
 	transition:					all ease-in-out 0.4s;
 	-webkit-transition			all ease-in-out 0.4s;
 	-moz-transition				all ease-in-out 0.4s;
 	-ms-transition				all ease-in-out 0.4s;
 }
 
-ul.nav li a:hover {
+ul.nav li a:hover, #apps-list li a:hover {
 	background:					#629f6f;
 	transition:					all ease-in-out 0.4s;
 	-webkit-transition			all ease-in-out 0.4s;
 	-moz-transition				all ease-in-out 0.4s;
 	-ms-transition				all ease-in-out 0.4s;
 }
+
+#apps-list {
+	display:					none;
+}
+
+#apps-list li {
+	width:						100%;
+}
+
+
 
 
 /*******************************************************************************

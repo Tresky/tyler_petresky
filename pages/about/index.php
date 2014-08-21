@@ -8,22 +8,38 @@ include($_SERVER['DOCUMENT_ROOT'] . '/templates/postheader.php');
 	<h2 class="info-box">About Me</h2>
 	<br>
 	<p>
-	<b>Hello! I'm Tyler Petresky! :)</b><br><br>
+	<b>Hello! I'm Tyler Petresky!</b><br><br>
 
-	Currently, I am a second year student at the University of Central Florida (UCF). I was
-	born and raised in Milton, Fl and recently moved to Orlando to pursue my bachelor's
-	degree in Computer Engineering. I find computers and computer systems to be extremely
-	fascinating. Because of this interest, my primary passions lie in embedded electronics
-	and computer programming.
+		Currently, I am a second year student at the University of Central Florida (UCF). I was
+		born and raised in Milton, Fl and recently moved to Orlando to pursue my bachelor's
+		degree in Computer Engineering. I find computers and computer systems to be extremely
+		fascinating. Because of this interest, my primary passions lie in embedded electronics
+		and computer programming.
 	</p>
 	<br>
 	<p>
-	I have not been at UCF for very long, but during the short span that I have attended this
-	school, I have done several things. First and foremost, I have learned a lot. The courses
-	that I have taken have taught me plenty, however, I am under the impression that your
-	education is what you make it. The majority of the knowledge that I have acquired since
-	arriving in Orlando has been gained from working on personal projects and joining engineering
-	clubs such as Engineers Without Borders (EWB).
+		I have not been at UCF for very long, but during the short span that I have attended this
+		school, I have done several things. First and foremost, I have learned a lot. The courses
+		that I have taken have taught me plenty, however, I am under the impression that your
+		education is what you make it. The majority of the knowledge that I have acquired since
+		arriving in Orlando has been gained from working on personal projects and joining engineering
+		clubs such as Engineers Without Borders (EWB).
+	</p>
+	<br>
+	<p>
+		I have been doing computer programming for close to 10 years now and have loved every second
+		of it. Over the years, I have gathered experience in languages such as C++, Python, Java,
+		HTML/CSS, PHP, and more. Using these languages I have created various projects ranging from
+		this website all the way to a tile engine library in C++ (known as SfTileEngine on Github).
+	</p>
+	<br>
+	<p>
+		As time continues to progress, I will continue to learn as much as I can while making as large
+		of an impact on the world as possible.
+	</p>
+	<br>
+	<p style="text-align:center">
+		<i>We can all change the world; you simply must try.</i>
 	</p>
 	<!--<div id="more-info">
 		<br>
