@@ -17,7 +17,8 @@ include($_SERVER['DOCUMENT_ROOT'] . '/templates/postheader.php');
 				and deploy an automatic water sampler that contains special features such as
 				remote configuration and activation via cell phone, portability, and affordability.
 			</p>
-			<br>
+			<img src="../../assets/images/stacky/autosampler_deploy1.jpg"
+				 alt="Autosampler Deployment" width="75%">
 			<p>
 				Throughout the project, I designed and constructed all of the circuitry to power
 				a total of four automatic sampling devices that are all controlled by a single central
@@ -25,10 +26,10 @@ include($_SERVER['DOCUMENT_ROOT'] . '/templates/postheader.php');
 				message to the central unit in the field. This unit then transmits a radio signal to
 				tell the four sampling devices to activate simultaneously.
 			</p>
-			<img src="../../assets/images/stacky/autosampler_proto1.jpg"
-				 alt="Autosampler Prototype v1" width="75%">
+			<img src="../../assets/images/stacky/autosampler_final.jpg"
+				 alt="Autosampler Final Assembly" width="75%">
 			<p>
-				Research paper in preparation.
+				<i>Research paper in preparation.</i>
 			</p>
 		</li>
 	</ul>

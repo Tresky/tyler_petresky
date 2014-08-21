@@ -46,7 +46,7 @@ nav {
 	min-width:					100%;
 	width:						100%;
 	height:						78px;
-	opacity:					0.8;
+	opacity:					0.85;
 	background:					#000;
 }
 
@@ -168,10 +168,11 @@ ul.nav li a:hover, #apps-list li a:hover {
 	}
 
 	label {
+		position:				absolute;
 		height:					78px;
 		top:					0;
 		right:					0;
-		z-index:				3;
+		z-index:				2;
     	background: 			#000;
     	color: 					#fff;
     	font-family:			'Droid Sans', sans-serif;
@@ -198,7 +199,7 @@ ul.nav li a:hover, #apps-list li a:hover {
 		position:				absolute;
 		top:					-50%;
 		right:					0;
-		z-index:				2;
+		z-index:				1;
 		transition:				all ease-in-out 0.4s;
 		-webkit-transition		all ease-in-out 0.4s;
 		-moz-transition			all ease-in-out 0.4s;
@@ -244,7 +245,7 @@ div.info-box {
 	bottom:					0;
 	left:					5%;
 	background:				#b9c7d4;
-	opacity:				0.8;
+	opacity:				0.85;
 	padding:				2% 2% 2% 2%;
 	border-style:			solid;
 	border-width: 			0 3px 0 3px;
@@ -266,7 +267,7 @@ h2.info-box {
 }
 
 #contact-box p, #about-box p {
-	text-indent: 			0
+	text-indent: 			0;
 }
 
 ul.projects img, ul.research img {
@@ -290,22 +291,19 @@ ul.projects img, ul.research img {
 {
 	div.info-box {
 		top:				156px;
-		bottom:				0;
 	}
 }
 
 @media all and (min-width: 1em) and (max-width: 40em)
 {
 	div.info-box {
-		width:				initial;
-		height:				initial;
+		position:			fixed;
 		top:				78px;
 		left:				0;
-		bottom:				0;
-		right:				0;
+		width:				initial;
 		padding:			20px 15px 15px 15px;
 		border-width: 		0;
-		z-index:			-1;
+		z-index: 			0;
 	}
 
 }
