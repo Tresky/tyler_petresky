@@ -11,13 +11,13 @@ $(document).ready(function()
 	$("nav h1").css("line-height", str_height);
 	$("label").css("line-height", str_height);
 
-	$("#nav-apps").click(function() {
+	/*$("#nav-apps").click(function() {
 		if ($('#apps-list').is(':visible'))
 			$('#apps-list').slideUp();
 		else
 			$('#apps-list').slideDown();
 	});
-	$("#apps-list li").css("width", $("ul.nav li").css("width"));
+	$("#apps-list li").css("width", $("ul.nav li").css("width"));*/
 
 	//FitTextSize("nav h1");
 	//FitTextSize("nav ul div li");
